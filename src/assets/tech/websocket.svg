@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="8" fill="#0f172a"/>
+  <!-- Two nodes connected with bidirectional arrows -->
+  <circle cx="10" cy="24" r="5" fill="#38bdf8"/>
+  <circle cx="38" cy="24" r="5" fill="#38bdf8"/>
+  <!-- Top arrow right -->
+  <line x1="16" y1="20" x2="32" y2="20" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="28,16 33,20 28,24" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom arrow left -->
+  <line x1="16" y1="28" x2="32" y2="28" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="20,24 15,28 20,32" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

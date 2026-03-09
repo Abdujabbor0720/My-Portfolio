@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="8" fill="#1b4332"/>
+  <!-- Globe / HTTP API icon - no text -->
+  <circle cx="24" cy="24" r="14" fill="none" stroke="#52b788" stroke-width="2"/>
+  <ellipse cx="24" cy="24" rx="7" ry="14" fill="none" stroke="#52b788" stroke-width="1.5"/>
+  <line x1="10" y1="24" x2="38" y2="24" stroke="#52b788" stroke-width="1.5"/>
+  <line x1="13" y1="17" x2="35" y2="17" stroke="#52b788" stroke-width="1"/>
+  <line x1="13" y1="31" x2="35" y2="31" stroke="#52b788" stroke-width="1"/>
+  <!-- Arrow indicating data flow -->
+  <polyline points="28,20 35,24 28,28" fill="none" stroke="#74c69d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

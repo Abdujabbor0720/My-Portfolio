@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="8" fill="#0f172a"/>
+  <!-- CI/CD pipeline: boxes connected by arrows -->
+  <!-- Box 1 (build) -->
+  <rect x="4" y="19" width="10" height="10" rx="2" fill="#22c55e"/>
+  <!-- Arrow 1 -->
+  <line x1="14" y1="24" x2="19" y2="24" stroke="#64748b" stroke-width="2"/>
+  <polyline points="17,21 20,24 17,27" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  <!-- Box 2 (test) -->
+  <rect x="19" y="19" width="10" height="10" rx="2" fill="#f59e0b"/>
+  <!-- Arrow 2 -->
+  <line x1="29" y1="24" x2="34" y2="24" stroke="#64748b" stroke-width="2"/>
+  <polyline points="32,21 35,24 32,27" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  <!-- Box 3 (deploy) -->
+  <rect x="34" y="19" width="10" height="10" rx="2" fill="#38bdf8"/>
+  <!-- Circular refresh arrow at bottom indicating continuous -->
+  <path d="M18 34 A8 8 0 0 0 30 34" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="14,32 17,35 20,32" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+</svg>

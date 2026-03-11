@@ -1,19 +1,21 @@
 import { BrowserRouter } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 
-import {
-  About,
-  Contact,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
+import { About, Hero, Navbar } from "./components";
 import { config } from "./constants/config";
 import { LanguageProvider } from "./i18n";
 import { ErrorBoundary } from "./components/layout/ErrorBoundary";
+
+const Experience = lazy(() => import("./components/sections/Experience"));
+const Tech = lazy(() => import("./components/sections/Tech"));
+const Works = lazy(() => import("./components/sections/Works"));
+const Contact = lazy(() => import("./components/sections/Contact"));
+
+const SectionFallback = () => (
+  <div className="flex h-48 items-center justify-center">
+    <div className="h-8 w-8 animate-spin rounded-full border-2 border-[#915EFF] border-t-transparent" />
+  </div>
+);
 
 const App = () => {
   useEffect(() => {
@@ -27,17 +29,24 @@ const App = () => {
       <LanguageProvider>
         <BrowserRouter>
           <div className="bg-primary relative z-0">
-            <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+            <div>
               <Navbar />
               <Hero />
             </div>
             <About />
-            <Experience />
-            <Tech />
-            <Works />
+            <Suspense fallback={<SectionFallback />}>
+              <Experience />
+            </Suspense>
+            <Suspense fallback={<SectionFallback />}>
+              <Tech />
+            </Suspense>
+            <Suspense fallback={<SectionFallback />}>
+              <Works />
+            </Suspense>
             <div className="relative z-0">
-              <Contact />
-              <StarsCanvas />
+              <Suspense fallback={<SectionFallback />}>
+                <Contact />
+              </Suspense>
             </div>
           </div>
         </BrowserRouter>

@@ -42,11 +42,14 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import herobg from "./herobg.webp";
+import airways from "./airways.webp";
 import eastway from "./eastway.webp";
 import uygunlik from "./uygunlik.webp";
 import tdtubot from "./tdtubot.webp";
 import metalix from "./metalix.webp";
 import watchz from "./watchz.webp";
+import mvpfootball from "./mvpfootball.webp";
+import profilePhoto from "./I.webp";
 
 export {
   logo,
@@ -90,9 +93,12 @@ export {
   starbucks,
   tesla,
   herobg,
+  airways,
   eastway,
   uygunlik,
   tdtubot,
   metalix,
   watchz,
+  mvpfootball,
+  profilePhoto,
 };

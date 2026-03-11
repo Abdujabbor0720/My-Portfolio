@@ -15,7 +15,7 @@ export const en = {
     p: "Introduction",
     h2: "Overview.",
     content:
-      "I am a Backend Developer specializing in Node.js and NestJS, with hands-on experience building production-grade APIs and scalable microservice architectures. I design RESTful and GraphQL APIs, architect robust database schemas with PostgreSQL and MongoDB, implement Redis caching strategies, and develop real-time systems using WebSocket and Telegram Web Apps. Passionate about clean architecture, SOLID principles, and turning complex backend challenges into reliable, maintainable production solutions.",
+      "I am a Backend Developer with over 1 year of hands-on experience specializing in Node.js and NestJS, building production-grade APIs and scalable microservice architectures. I design RESTful and GraphQL APIs, architect robust database schemas with PostgreSQL and MongoDB, implement Redis caching strategies, and develop real-time systems using WebSocket and Telegram Web Apps. Passionate about clean architecture, SOLID principles, and turning complex backend challenges into reliable, maintainable production solutions.",
     cards: [
       { title: "Backend Developer", subtitle: "Node.js / NestJS" },
       { title: "Database Architect", subtitle: "PostgreSQL / MongoDB" },
@@ -63,6 +63,7 @@ export const en = {
         description:
           "High-performance travel booking platform engineered for seamless booking flows, complex trip filtering, and low-latency data retrieval at scale. Architected with Prisma-optimized relational schemas and AWS S3 media pipelines.",
         tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "Prisma", color: "blue-text-gradient" },
           { name: "PostgreSQL", color: "pink-text-gradient" },
@@ -85,6 +86,7 @@ export const en = {
         description:
           "Enterprise-grade Telegram ecosystem serving 5,000+ active users at Tashkent State Medical University. Features real-time admin synchronization, news distribution, and a Telegram Web App frontend built with Next.js.",
         tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
           { name: "PostgreSQL", color: "pink-text-gradient" },
@@ -97,8 +99,11 @@ export const en = {
         description:
           "Industrial-scale platform for a metal construction company. Powered by an asynchronous task queue (BullMQ) for heavy service-inquiry processing, AWS S3 asset management, and a structured project portfolio engine.",
         tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
           { name: "BullMQ", color: "pink-text-gradient" },
           { name: "AWS S3", color: "green-text-gradient" },
         ],
@@ -108,11 +113,42 @@ export const en = {
         description:
           "Next-gen luxury e-commerce platform with AI-driven product recommendations, international payment gateway integration, and high-speed CDN delivery via Bunny.net. Full-stack architecture with a Next.js storefront.",
         tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
           { name: "Bunny.net CDN", color: "pink-text-gradient" },
+          { name: "Payment Systems", color: "pink-text-gradient" },
           { name: "AI Integration", color: "green-text-gradient" },
           { name: "Next.js", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "Airways System",
+        description:
+          "Backend system for airline operations and flight process management. Engineered 271 REST API endpoints covering flights, routes, aircraft, passengers, booking workflows, and end-to-end aviation operations.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Docker", color: "green-text-gradient" },
+        ],
+      },
+      {
+        name: "MVP Football Academy",
+        description:
+          "Football academy platform with 10,000+ active users on App Store and Google Play. Built the entire backend from scratch including coach booking, real-time leaderboards, user statistics, AI chatbot integration, and Firebase push notifications.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Docker", color: "green-text-gradient" },
+          { name: "JWT", color: "blue-text-gradient" },
+          { name: "RBAC", color: "pink-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
+          { name: "AI Chatbot", color: "green-text-gradient" },
+          { name: "Payment Systems", color: "pink-text-gradient" },
         ],
       },
     ],

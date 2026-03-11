@@ -9,11 +9,13 @@ import {
   web,
   creator,
   mobile,
+  airways,
   eastway,
   uygunlik,
   tdtubot,
   metalix,
   watchz,
+  mvpfootball,
   javascript,
   nestjs,
   postgresql,
@@ -103,5 +105,14 @@ export const projectVisuals = [
   {
     image: watchz,
     liveLink: "https://watchz.tech",
+  },
+  {
+    image: airways,
+    liveLink: "https://github.com/Abdujabbor0720/Airways_System",
+  },
+  {
+    image: mvpfootball,
+    appStoreLink: "https://apps.apple.com/us/app/trainball/id6747034373",
+    playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzfootball.akademiya",
   },
 ];

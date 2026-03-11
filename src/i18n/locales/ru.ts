@@ -56,41 +56,66 @@ export const ru: Translations = {
   works: {
     p: "Мои работы",
     h2: "Проекты.",
+    liveLabel: "Открыть проект",
     content:
-      "Следующие проекты демонстрируют мою экспертизу в бэкенд-разработке через реальные производственные системы. Каждый проект показывает масштабируемую архитектуру, проектирование баз данных, разработку API и оптимизацию производительности.",
+      "Следующие проекты — это production-системы, которые я спроектировал и запустил. Каждый из них демонстрирует масштабируемое API-проектирование, инженерию баз данных и приоритет производительности.",
     projects: [
       {
-        name: "MVP Football",
+        name: "Eastway Travel",
         description:
-          "Модульный NestJS REST API для платформы управления футбольной лигой с TypeORM, обработкой медиа через AWS S3, RBAC для ролей admin/referee/player и обновлениями матча в реальном времени через WebSocket.",
+          "Высокопроизводительная платформа бронирования путешествий, оптимизированная для бесперебойных booking-потоков, сложной фильтрации туров и низколатентного получения данных. Архитектура построена на Prisma-оптимизированных реляционных схемах и AWS S3 media pipelines.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "typeorm", color: "blue-text-gradient" },
-          { name: "aws-s3", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "Prisma", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
         name: "Uyg'un Learning Platform",
         description:
-          "Полнофункциональный бэкенд e-learning с комплексным RBAC (студент/преподаватель/admin), безопасным стримингом видео, загрузкой файлов по частям, биллингом подписок и 50+ задокументированными REST-эндпоинтами.",
+          "Комплексная e-learning экосистема с корпоративной системой контроля доступа (RBAC), защищённой доставкой видеоконтента и детальным отслеживанием прогресса. Рассчитана на высокую конкурентность для ролей студента, преподавателя и администратора.",
         tags: [
-          { name: "nodejs", color: "green-text-gradient" },
-          { name: "postgresql", color: "blue-text-gradient" },
-          { name: "redis", color: "pink-text-gradient" },
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "Express.js", color: "green-text-gradient" },
+          { name: "MongoDB", color: "pink-text-gradient" },
+          { name: "Mongoose", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
-        name: "Eastway Travel",
+        name: "TDTU Help Bot",
         description:
-          "Бэкенд платформы бронирования для авиабилетов, отелей и туров с оптимизированными Prisma-запросами, мультивалютной обработкой платежей, поддержкой отката транзакций и автоматическими email-уведомлениями.",
+          "Корпоративная Telegram-экосистема для 5000+ активных пользователей Ташкентского государственного медицинского университета. Включает синхронизацию администратора в реальном времени, рассылку новостей и фронтенд на Next.js в виде Telegram Web App.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "prisma", color: "blue-text-gradient" },
-          { name: "postgresql", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "Next.js", color: "green-text-gradient" },
+          { name: "TWA SDK", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
+      },
+      {
+        name: "Metalix",
+        description:
+          "Промышленная платформа для компании металлоконструкций. Работает на асинхронной очереди задач (BullMQ) для обработки тяжёлых запросов, управления активами через AWS S3 и структурированного портфолио проектов.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "BullMQ", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+        ],
+      },
+      {
+        name: "Watchz",
+        description:
+          "E-commerce платформа нового поколения для люксовых часов с AI-рекомендациями товаров, интеграцией международных платёжных шлюзов и высокоскоростной CDN-доставкой через Bunny.net. Полностековая архитектура с Next.js фронтендом.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Bunny.net CDN", color: "pink-text-gradient" },
+          { name: "AI Integration", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
+        ],
       },
     ],
   },

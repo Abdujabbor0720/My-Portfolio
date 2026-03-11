@@ -1,24 +1,23 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
-import { ComputersCanvas, StarsCanvas } from "../canvas";
+import { herobg } from "../../assets";
 import { useLanguage } from "../../i18n";
-import { ErrorBoundary } from "../layout/ErrorBoundary";
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
     <section className="relative mx-auto h-screen w-full overflow-hidden bg-[#050816]">
-      {/* Animated star field background */}
-      <StarsCanvas />
-
-      {/* 3D Computer model — isolated so a WebGL crash can't blank the page */}
-      <div className="absolute inset-0">
-        <ErrorBoundary fallback={<div className="h-full w-full" />}>
-          <ComputersCanvas />
-        </ErrorBoundary>
-      </div>
+      {/* Hero background image */}
+      <img
+        src={herobg}
+        alt="hero background"
+        className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+        loading="eager"
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/40 via-transparent to-[#050816]/80" />
 
       {/* Hero text — pointer-events-none so mouse events pass through to the canvas for rotation */}
       <div
@@ -57,7 +56,7 @@ const Hero = () => {
 
           {/* CTA button — pointer-events-auto so it stays clickable */}
           <motion.a
-            href="#work"
+            href="#projects"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}

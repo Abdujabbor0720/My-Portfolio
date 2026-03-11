@@ -19,28 +19,30 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, subtitle, icon }) =
   <Tilt
     glareEnable
     tiltEnable
-    tiltMaxAngleX={30}
-    tiltMaxAngleY={30}
+    tiltMaxAngleX={12}
+    tiltMaxAngleY={12}
     glareColor="#aaa6c3"
+    className="w-[240px]"
   >
-    <div className="max-w-[250px] w-full xs:w-[250px]">
-      <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
-      >
-        <div className="bg-tertiary flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] px-8 py-5">
-          <img
-            src={icon}
-            alt={title}
-            className="h-16 w-16 object-contain"
-          />
-          <div className="text-center">
-            <h3 className="text-[20px] font-bold text-white">{title}</h3>
-            <p className="mt-1 text-[14px] text-[#915EFF] font-medium">{subtitle}</p>
-          </div>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.3 }}
+      variants={fadeIn("up", "spring", index * 0.2, 0.6)}
+      className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
+    >
+      <div className="bg-tertiary flex min-h-[260px] flex-col items-center justify-evenly rounded-[20px] px-6 py-5">
+        <img
+          src={icon}
+          alt={title}
+          className="h-16 w-16 object-contain"
+        />
+        <div className="text-center">
+          <h3 className="text-[18px] font-bold text-white leading-snug">{title}</h3>
+          <p className="mt-1 text-[13px] text-[#915EFF] font-medium">{subtitle}</p>
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   </Tilt>
 );
 
@@ -58,10 +60,10 @@ const About = () => {
         {t.about.content}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
+      <div className="mt-16 flex flex-wrap justify-center gap-6 sm:justify-start">
         {t.about.cards.map((card, index) => (
           <ServiceCard
-            key={card.title}
+            key={index}
             index={index}
             title={card.title}
             subtitle={card.subtitle}

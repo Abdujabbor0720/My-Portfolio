@@ -54,41 +54,66 @@ export const en = {
   works: {
     p: "My work",
     h2: "Projects.",
+    liveLabel: "View Project",
     content:
-      "The following projects showcase my backend engineering expertise through real-world production systems. Each project demonstrates scalable architecture, database design, API development, and performance optimization.",
+      "The following projects are production systems I architected and shipped. Each one demonstrates scalable API design, database engineering, and performance-first thinking.",
     projects: [
       {
-        name: "MVP Football",
+        name: "Eastway Travel",
         description:
-          "Modular NestJS REST API for a football league management platform with TypeORM, AWS S3 media handling, RBAC for admin/referee/player roles, and real-time match updates via WebSocket.",
+          "High-performance travel booking platform engineered for seamless booking flows, complex trip filtering, and low-latency data retrieval at scale. Architected with Prisma-optimized relational schemas and AWS S3 media pipelines.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "typeorm", color: "blue-text-gradient" },
-          { name: "aws-s3", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "Prisma", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
         name: "Uyg'un Learning Platform",
         description:
-          "Full-featured e-learning backend with comprehensive RBAC (student/instructor/admin), secure video streaming, chunked file uploads, subscription billing, and 50+ documented REST endpoints.",
+          "Comprehensive e-learning ecosystem with enterprise-grade Role-Based Access Control (RBAC), secure video content delivery, and granular progress tracking. Built for high concurrency across student, instructor, and admin roles.",
         tags: [
-          { name: "nodejs", color: "green-text-gradient" },
-          { name: "postgresql", color: "blue-text-gradient" },
-          { name: "redis", color: "pink-text-gradient" },
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "Express.js", color: "green-text-gradient" },
+          { name: "MongoDB", color: "pink-text-gradient" },
+          { name: "Mongoose", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
-        name: "Eastway Travel",
+        name: "TDTU Help Bot",
         description:
-          "Booking platform backend for flights, hotels, and tour packages with optimized Prisma queries, multi-currency payment processing, transaction rollback support, and automated email notifications.",
+          "Enterprise-grade Telegram ecosystem serving 5,000+ active users at Tashkent State Medical University. Features real-time admin synchronization, news distribution, and a Telegram Web App frontend built with Next.js.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "prisma", color: "blue-text-gradient" },
-          { name: "postgresql", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "Next.js", color: "green-text-gradient" },
+          { name: "TWA SDK", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
+      },
+      {
+        name: "Metalix",
+        description:
+          "Industrial-scale platform for a metal construction company. Powered by an asynchronous task queue (BullMQ) for heavy service-inquiry processing, AWS S3 asset management, and a structured project portfolio engine.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "BullMQ", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+        ],
+      },
+      {
+        name: "Watchz",
+        description:
+          "Next-gen luxury e-commerce platform with AI-driven product recommendations, international payment gateway integration, and high-speed CDN delivery via Bunny.net. Full-stack architecture with a Next.js storefront.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Bunny.net CDN", color: "pink-text-gradient" },
+          { name: "AI Integration", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
+        ],
       },
     ],
   },

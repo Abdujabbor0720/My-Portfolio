@@ -9,9 +9,11 @@ import {
   web,
   creator,
   mobile,
-  carrent,
-  jobit,
-  tripguide,
+  eastway,
+  uygunlik,
+  tdtubot,
+  metalix,
+  watchz,
   javascript,
   nestjs,
   postgresql,
@@ -83,15 +85,23 @@ export const experienceVisuals = [
 // Project visual data — text content comes from i18n translations
 export const projectVisuals = [
   {
-    image: carrent,
-    sourceCodeLink: "https://github.com/Abdujabbor0720",
+    image: eastway,
+    liveLink: "https://eastway-travel.com",
   },
   {
-    image: jobit,
-    sourceCodeLink: "https://github.com/Abdujabbor0720",
+    image: uygunlik,
+    liveLink: "https://uygunlik.uz",
   },
   {
-    image: tripguide,
-    sourceCodeLink: "https://github.com/Abdujabbor0720",
+    image: tdtubot,
+    liveLink: "https://t.me/TDTU_help_bot",
+  },
+  {
+    image: metalix,
+    liveLink: "https://metalix.uz",
+  },
+  {
+    image: watchz,
+    liveLink: "https://watchz.tech",
   },
 ];

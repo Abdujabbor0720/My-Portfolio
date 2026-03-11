@@ -56,41 +56,66 @@ export const uz: Translations = {
   works: {
     p: "Mening ishlarim",
     h2: "Loyihalar.",
+    liveLabel: "Loyihani ko'rish",
     content:
-      "Quyidagi loyihalar haqiqiy ishlab chiqarish tizimlari orqali backend muhandislik tajribamni ko'rsatadi. Har bir loyiha kengaytiriladigan arxitektura, ma'lumotlar bazasi dizayni, API ishlanmasi va ishlash optimallashtirish ko'nikmalarini namoyish etadi.",
+      "Quyidagi loyihalar men arxitektira qilgan va ishga tushirgan real ishlab chiqarish tizimlaridir. Har biri kengaytiriladigan API dizayni, ma'lumotlar bazasi muhandisligi va yuqori unumdorlik tamoyillarini namoyish etadi.",
     projects: [
       {
-        name: "MVP Football",
+        name: "Eastway Travel",
         description:
-          "TypeORM, AWS S3 media ishlov berish, admin/hakim/o'yinchi rollari uchun RBAC va WebSocket orqali real vaqtli o'yin yangilanishlarini o'z ichiga olgan futbol ligasi boshqaruvi platformasi uchun modulli NestJS REST API.",
+          "Uzluksiz bron qilish oqimlari, murakkab sayohat filtrlash va past kechikishli ma'lumotlarni olish uchun yaratilgan yuqori unumdor sayohat bron qilish platformasi. Prisma-optimallashtirilgan relyatsion sxemalar va AWS S3 media pipeline asosida arxitektura qilingan.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "typeorm", color: "blue-text-gradient" },
-          { name: "aws-s3", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "Prisma", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
         name: "Uyg'un O'quv Platformasi",
         description:
-          "Keng qamrovli RBAC (talaba/o'qituvchi/admin), xavfsiz video oqim, qismlarga bo'lingan fayl yuklash, obuna to'lovi va 50+ hujjatlashtirilgan REST endpointlari bilan to'liq funksional e-ta'lim backend.",
+          "Korporativ darajadagi Rol Asosidagi Kirish Nazorati (RBAC), xavfsiz video kontent yetkazib berish va batafsil progress kuzatish tizimiga ega keng qamrovli e-ta'lim ekotizimi. Talaba, o'qituvchi va admin rollarida yuqori bir vaqtda ishlash uchun yaratilgan.",
         tags: [
-          { name: "nodejs", color: "green-text-gradient" },
-          { name: "postgresql", color: "blue-text-gradient" },
-          { name: "redis", color: "pink-text-gradient" },
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "Express.js", color: "green-text-gradient" },
+          { name: "MongoDB", color: "pink-text-gradient" },
+          { name: "Mongoose", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
       },
       {
-        name: "Eastway Travel",
+        name: "TDTU Help Bot",
         description:
-          "Optimallashtirilgan Prisma so'rovlari, ko'p valyutali to'lovlarni qayta ishlash, tranzaksiyani qaytarish qo'llab-quvvatlash va avtomatlashtirilgan elektron pochta xabarnomalarini o'z ichiga olgan parvozlar, mehmonxonalar va tur paketlari uchun bron qilish platformasi backend.",
+          "Toshkent Davlat Tibbiyot Universitetida 5000+ faol foydalanuvchiga xizmat ko'rsatuvchi korporativ Telegram ekotizimi. Real vaqtli admin sinxronizatsiyasi, yangiliklar tarqatish va Next.js asosida qurilgan Telegram Web App frontendi mavjud.",
         tags: [
-          { name: "nestjs", color: "green-text-gradient" },
-          { name: "prisma", color: "blue-text-gradient" },
-          { name: "postgresql", color: "pink-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "Next.js", color: "green-text-gradient" },
+          { name: "TWA SDK", color: "blue-text-gradient" },
         ],
-        sourceCodeLink: "https://github.com/Abdujabbor0720",
+      },
+      {
+        name: "Metalix",
+        description:
+          "Metall qurilish kompaniyasi uchun sanoat miqyosidagi platforma. Og'ir xizmat so'rovlarini qayta ishlash uchun asinxron vazifalar navbati (BullMQ), AWS S3 aktivlarini boshqarish va tuzilgan loyiha portfolio mexanizmi asosida ishlaydi.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "BullMQ", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+        ],
+      },
+      {
+        name: "Watchz",
+        description:
+          "Sun'iy intellekt asosida mahsulot tavsiyalari, xalqaro to'lov tizimi integratsiyasi va Bunny.net orqali yuqori tezlikli CDN yetkazib berish xususiyatiga ega keyingi avlod hashamatli e-commerce platformasi. Next.js storefront bilan to'liq stack arxitektura.",
+        tags: [
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Bunny.net CDN", color: "pink-text-gradient" },
+          { name: "AI Integration", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
+        ],
       },
     ],
   },

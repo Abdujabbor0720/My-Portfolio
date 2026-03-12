@@ -31,7 +31,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   playStoreLink,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.15, 0.6)}>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={fadeIn("up", "spring", index * 0.15, 0.6)}
+    >
       <Tilt
         glareEnable
         tiltEnable

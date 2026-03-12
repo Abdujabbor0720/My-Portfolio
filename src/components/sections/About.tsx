@@ -27,7 +27,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, title, subtitle, icon }) =
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={fadeIn("up", "spring", index * 0.2, 0.6)}
       className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
     >

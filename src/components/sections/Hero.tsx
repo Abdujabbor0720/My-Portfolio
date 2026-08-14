@@ -56,25 +56,50 @@ const Hero = () => {
               )}
             </div>
 
-            {/* CTA button */}
-            <motion.a
-              href="#projects"
+            {/* CTA buttons */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="pointer-events-auto mt-8 inline-flex items-center gap-3 rounded-full bg-[#915EFF] px-7 py-3 font-bold text-white shadow-lg shadow-[#915EFF44] hover:bg-[#7c4ed4] hover:shadow-[#915EFF66] transition-all duration-300 group"
+              className="mt-8 flex flex-wrap items-center gap-3"
             >
-              <span>{t.hero.viewProjects}</span>
-              <svg
-                className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
+              <a
+                href="#projects"
+                className="pointer-events-auto group inline-flex items-center gap-3 rounded-full bg-[#915EFF] px-7 py-3 font-bold text-white shadow-lg shadow-[#915EFF44] transition-all duration-300 hover:bg-[#7c4ed4] hover:shadow-[#915EFF66]"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </motion.a>
+                <span>{t.hero.viewProjects}</span>
+                <svg
+                  className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+
+              <a
+                href="#work"
+                className="pointer-events-auto group inline-flex items-center gap-3 rounded-full border border-[#915EFF66] bg-[#915EFF14] px-7 py-3 font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-[#915EFF] hover:bg-[#915EFF26]"
+              >
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <rect x="3" y="7.5" width="18" height="12.5" rx="2.5" />
+                  <path
+                    strokeLinejoin="round"
+                    d="M8.5 7.5V5.8A1.8 1.8 0 0 1 10.3 4h3.4a1.8 1.8 0 0 1 1.8 1.8v1.7"
+                  />
+                  <path d="M3 12.5h18" />
+                </svg>
+                <span>{t.hero.viewExperience}</span>
+              </a>
+            </motion.div>
           </div>
         </div>
 

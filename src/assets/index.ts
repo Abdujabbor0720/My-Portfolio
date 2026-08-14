@@ -36,6 +36,7 @@ import cicd from "./tech/cicd.svg";
 import telegram from "./tech/telegram.svg";
 import telegrambot from "./tech/telegrambot.svg";
 
+import yoshlarAgentligi from "./company/yoshlar-agentligi.webp";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -52,6 +53,9 @@ import uzchess from "./uzchess.webp";
 import castinggo from "./castinggo.webp";
 import tv916 from "./916tv.webp";
 import maqsad from "./maqsad.webp";
+import mazmunli from "./mazmunli.webp";
+import mymarkaz from "./mymarkaz.webp";
+import futuretravel from "./futuretravel.webp";
 import profilePhoto from "./I.webp";
 
 export {
@@ -91,6 +95,7 @@ export {
   cicd,
   telegram,
   telegrambot,
+  yoshlarAgentligi,
   meta,
   shopify,
   starbucks,
@@ -106,5 +111,8 @@ export {
   castinggo,
   tv916,
   maqsad,
+  mazmunli,
+  mymarkaz,
+  futuretravel,
   profilePhoto,
 };

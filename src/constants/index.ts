@@ -5,10 +5,7 @@ import {
   nodejs,
   mongodb,
   docker,
-  backend,
-  web,
-  creator,
-  mobile,
+  yoshlarAgentligi,
   eastway,
   uygunlik,
   metalix,
@@ -19,6 +16,9 @@ import {
   castinggo,
   tv916,
   maqsad,
+  mazmunli,
+  mymarkaz,
+  futuretravel,
   javascript,
   nestjs,
   postgresql,
@@ -43,13 +43,16 @@ export const navLinks: TNavLink[] = [
   { id: "contact", title: "Contact" },
 ];
 
-// Service card icons for the About section (titles/subtitles come from i18n)
-export const serviceIcons = [
-  { icon: backend },  // Backend Developer
-  { icon: web },      // Database Architect
-  { icon: creator },  // System Optimization
-  { icon: mobile },   // Telegram WebApp
-];
+// Service card accents for the About section.
+// Icons are inline SVGs rendered in About.tsx; titles/subtitles come from i18n.
+export const serviceAccents = [
+  { key: "server", color: "#4ade80" },   // Backend Developer
+  { key: "database", color: "#38bdf8" }, // Database Architect
+  { key: "gauge", color: "#f472b6" },    // System Optimization
+  { key: "telegram", color: "#a78bfa" }, // Telegram WebApp
+] as const;
+
+export type ServiceIconKey = (typeof serviceAccents)[number]["key"];
 
 // Full backend tech stack from CV
 export const technologies: TTechnology[] = [
@@ -75,35 +78,29 @@ export const technologies: TTechnology[] = [
   { name: "Telegram Bot", icon: telegrambot },
 ];
 
-// Experience visual data — text content comes from i18n translations
-export const experienceVisuals = [
-  {
-    icon: backend,
-    iconBg: "#0d2117",
-  },
-  {
-    icon: web,
-    iconBg: "#131026",
-  },
+// Experience visual data — text content comes from i18n translations.
+// Order must match the `jobs` array in every locale file.
+// `logo` is optional: when absent the card falls back to the monogram tile.
+export const experienceVisuals: {
+  monogram: string;
+  accent: string;
+  current: boolean;
+  logo?: string;
+}[] = [
+  { monogram: "YA", accent: "#38bdf8", current: true, logo: yoshlarAgentligi }, // Youth Affairs Agency
+  { monogram: "MP", accent: "#a78bfa", current: true },  // MPMG
+  { monogram: "PG", accent: "#4ade80", current: false }, // Proger Group
+  { monogram: "TH", accent: "#f472b6", current: false }, // TechHub
 ];
 
-// Project visual data — text content comes from i18n translations
+// Project visual data — text content comes from i18n translations.
+// Ordered by prominence; must match the `projects` array in every locale file.
 export const projectVisuals = [
   {
-    image: eastway,
-    liveLink: "https://eastway-travel.com",
-  },
-  {
-    image: uygunlik,
-    liveLink: "https://uygunlik.uz",
-  },
-  {
-    image: metalix,
-    liveLink: "https://metalix.uz",
-  },
-  {
-    image: watchz,
-    liveLink: "https://watchz.tech",
+    image: uzchess,
+    liveLink: "https://uzchesss.uz",
+    appStoreLink: "https://apps.apple.com/uz/app/uzchess-shaxmat-akademiya/id6502834977",
+    playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzchess.akademiya",
   },
   {
     image: tarantool,
@@ -115,20 +112,46 @@ export const projectVisuals = [
     playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzfootball.akademiya",
   },
   {
-    image: uzchess,
-    appStoreLink: "https://apps.apple.com/uz/app/uzchess-shaxmat-akademiya/id6502834977",
-    playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzchess.akademiya",
-  },
-  {
     image: castinggo,
+    liveLink: "https://castinggo.uz",
     appStoreLink: "https://apps.apple.com/uz/app/castinggo/id6756616108",
+    playStoreLink: "https://play.google.com/store/apps/details?id=uz.castinggo.app",
   },
   {
     image: tv916,
     appStoreLink: "https://apps.apple.com/uz/app/tv916-movies/id6768674034",
   },
   {
+    image: mazmunli,
+    liveLink: "https://mazmunli.uz",
+    appStoreLink: "https://apps.apple.com/us/app/mazmunli/id6772443443",
+  },
+  {
     image: maqsad,
-    appStoreLink: "https://apps.apple.com/uz/app/maqsad-talantlar/id6788289255",
+    appStoreLink: "https://apps.apple.com/us/app/maqsad-talantlar/id6788289255",
+  },
+  {
+    image: mymarkaz,
+    liveLink: "https://mymarkaz.uz",
+  },
+  {
+    image: watchz,
+    liveLink: "https://watchz.tech",
+  },
+  {
+    image: metalix,
+    liveLink: "https://metalix.uz",
+  },
+  {
+    image: uygunlik,
+    liveLink: "https://uygunlik.uz",
+  },
+  {
+    image: eastway,
+    liveLink: "https://eastway-travel.com",
+  },
+  {
+    image: futuretravel,
+    liveLink: "https://www.future-travel.uz",
   },
 ];

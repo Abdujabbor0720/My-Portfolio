@@ -82,19 +82,6 @@ export const en = {
         ],
       },
       {
-        name: "TDTU Help Bot",
-        description:
-          "Enterprise-grade Telegram ecosystem serving 5,000+ active users at Tashkent State Medical University. Features real-time admin synchronization, news distribution, and a Telegram Web App frontend built with Next.js.",
-        tags: [
-          { name: "TypeScript", color: "blue-text-gradient" },
-          { name: "NestJS", color: "green-text-gradient" },
-          { name: "TypeORM", color: "blue-text-gradient" },
-          { name: "PostgreSQL", color: "pink-text-gradient" },
-          { name: "Next.js", color: "green-text-gradient" },
-          { name: "TWA SDK", color: "blue-text-gradient" },
-        ],
-      },
-      {
         name: "Metalix",
         description:
           "Industrial-scale platform for a metal construction company. Powered by an asynchronous task queue (BullMQ) for heavy service-inquiry processing, AWS S3 asset management, and a structured project portfolio engine.",
@@ -123,16 +110,17 @@ export const en = {
         ],
       },
       {
-        name: "Airways System",
+        name: "Tarantool Games",
         description:
-          "Backend system for airline operations and flight process management. Engineered 271 REST API endpoints covering flights, routes, aircraft, passengers, booking workflows, and end-to-end aviation operations.",
+          "Official web platform for TaranTool Games, the studio building the first AAA historical action-RPG from Central Asia. Powers the Steam wishlist funnel, investor and partnership inquiries, team and roadmap content management, and a cinematic media pipeline tuned for heavy trailer traffic.",
         tags: [
           { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "PostgreSQL", color: "pink-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
           { name: "Redis", color: "pink-text-gradient" },
-          { name: "Docker", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
         ],
       },
       {
@@ -149,6 +137,65 @@ export const en = {
           { name: "Firebase FCM", color: "blue-text-gradient" },
           { name: "AI Chatbot", color: "green-text-gradient" },
           { name: "Payment Systems", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "UzChess",
+        description:
+          "Online chess platform with real-time multiplayer over WebSocket across Bullet, Blitz, Rapid and Chess960 formats. Includes arena tournaments, a rating engine, a puzzle system, engine-backed game analysis, video courses with mentors, and push notification delivery.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Docker", color: "green-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "CastingGo",
+        description:
+          "Media-talent marketplace connecting brands and casting agencies with actors, models, videographers and content creators. Built the casting publication flow, verified talent profiles with photo and video portfolios, category and profession search, and a PRO subscription layer with local payment gateways.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Payment Systems", color: "pink-text-gradient" },
+          { name: "RBAC", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "916TV",
+        description:
+          "OTT streaming service for films, series and short-form video. Backend covers multi-quality HLS transcoding pipelines, a creator studio for publishing films and episodes, watch history with a personal library, and CDN-backed delivery tuned for mobile networks.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "HLS Streaming", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "CDN", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "Maqsad",
+        description:
+          "Social platform for Uzbekistan's talent community, connecting vocalists, dancers, actors and other creators. Built talent discovery by region and category, a photo, video and short-form feed with YouTube embeds, direct messaging between creators, activity-driven leaderboard rankings, and push notifications across Uzbek, Russian and English.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
         ],
       },
     ],

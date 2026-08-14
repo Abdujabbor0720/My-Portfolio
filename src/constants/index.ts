@@ -9,13 +9,16 @@ import {
   web,
   creator,
   mobile,
-  airways,
   eastway,
   uygunlik,
-  tdtubot,
   metalix,
   watchz,
   mvpfootball,
+  tarantool,
+  uzchess,
+  castinggo,
+  tv916,
+  maqsad,
   javascript,
   nestjs,
   postgresql,
@@ -95,10 +98,6 @@ export const projectVisuals = [
     liveLink: "https://uygunlik.uz",
   },
   {
-    image: tdtubot,
-    liveLink: "https://t.me/TDTU_help_bot",
-  },
-  {
     image: metalix,
     liveLink: "https://metalix.uz",
   },
@@ -107,12 +106,29 @@ export const projectVisuals = [
     liveLink: "https://watchz.tech",
   },
   {
-    image: airways,
-    liveLink: "https://github.com/Abdujabbor0720/Airways_System",
+    image: tarantool,
+    liveLink: "https://tarantool.games",
   },
   {
     image: mvpfootball,
     appStoreLink: "https://apps.apple.com/us/app/trainball/id6747034373",
     playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzfootball.akademiya",
+  },
+  {
+    image: uzchess,
+    appStoreLink: "https://apps.apple.com/uz/app/uzchess-shaxmat-akademiya/id6502834977",
+    playStoreLink: "https://play.google.com/store/apps/details?id=uz.uzchess.akademiya",
+  },
+  {
+    image: castinggo,
+    appStoreLink: "https://apps.apple.com/uz/app/castinggo/id6756616108",
+  },
+  {
+    image: tv916,
+    appStoreLink: "https://apps.apple.com/uz/app/tv916-movies/id6768674034",
+  },
+  {
+    image: maqsad,
+    appStoreLink: "https://apps.apple.com/uz/app/maqsad-talantlar/id6788289255",
   },
 ];

@@ -42,13 +42,16 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import herobg from "./herobg.webp";
-import airways from "./airways.webp";
 import eastway from "./eastway.webp";
 import uygunlik from "./uygunlik.webp";
-import tdtubot from "./tdtubot.webp";
 import metalix from "./metalix.webp";
 import watchz from "./watchz.webp";
 import mvpfootball from "./mvpfootball.webp";
+import tarantool from "./tarantool.webp";
+import uzchess from "./uzchess.webp";
+import castinggo from "./castinggo.webp";
+import tv916 from "./916tv.webp";
+import maqsad from "./maqsad.webp";
 import profilePhoto from "./I.webp";
 
 export {
@@ -93,12 +96,15 @@ export {
   starbucks,
   tesla,
   herobg,
-  airways,
   eastway,
   uygunlik,
-  tdtubot,
   metalix,
   watchz,
   mvpfootball,
+  tarantool,
+  uzchess,
+  castinggo,
+  tv916,
+  maqsad,
   profilePhoto,
 };

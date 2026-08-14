@@ -84,19 +84,6 @@ export const ru: Translations = {
         ],
       },
       {
-        name: "TDTU Help Bot",
-        description:
-          "Корпоративная Telegram-экосистема для 5000+ активных пользователей Ташкентского государственного медицинского университета. Включает синхронизацию администратора в реальном времени, рассылку новостей и фронтенд на Next.js в виде Telegram Web App.",
-        tags: [
-          { name: "TypeScript", color: "blue-text-gradient" },
-          { name: "NestJS", color: "green-text-gradient" },
-          { name: "TypeORM", color: "blue-text-gradient" },
-          { name: "PostgreSQL", color: "pink-text-gradient" },
-          { name: "Next.js", color: "green-text-gradient" },
-          { name: "TWA SDK", color: "blue-text-gradient" },
-        ],
-      },
-      {
         name: "Metalix",
         description:
           "Промышленная платформа для компании металлоконструкций. Работает на асинхронной очереди задач (BullMQ) для обработки тяжёлых запросов, управления активами через AWS S3 и структурированного портфолио проектов.",
@@ -125,16 +112,17 @@ export const ru: Translations = {
         ],
       },
       {
-        name: "Airways System",
+        name: "Tarantool Games",
         description:
-          "Backend-система для управления авиакомпаниями и контроля полётных процессов. Разработано 271 REST API endpoint для управления рейсами, маршрутами, самолётами, пассажирами, процессами бронирования и авиационными операциями.",
+          "Официальная веб-платформа TaranTool Games — студии, разрабатывающей первую AAA историческую action-RPG из Центральной Азии. Обеспечивает воронку Steam wishlist, обработку запросов инвесторов и партнёров, управление контентом команды и roadmap, а также media pipeline, рассчитанный на тяжёлый трафик трейлеров.",
         tags: [
           { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "PostgreSQL", color: "pink-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
           { name: "Redis", color: "pink-text-gradient" },
-          { name: "Docker", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
         ],
       },
       {
@@ -151,6 +139,65 @@ export const ru: Translations = {
           { name: "Firebase FCM", color: "blue-text-gradient" },
           { name: "AI Chatbot", color: "green-text-gradient" },
           { name: "Payment Systems", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "UzChess",
+        description:
+          "Шахматная платформа с мультиплеером в реальном времени через WebSocket в форматах Bullet, Blitz, Rapid и Chess960. Включает арена-турниры, рейтинговый движок, систему задач, анализ партий на базе движка, видеокурсы с менторами и доставку push-уведомлений.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Docker", color: "green-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "CastingGo",
+        description:
+          "Media-talent маркетплейс, связывающий бренды и кастинг-агентства с актёрами, моделями, видеографами и контент-мейкерами. Реализованы публикация кастингов, верифицированные профили талантов с фото- и видеопортфолио, поиск по категориям и профессиям, а также слой PRO-подписки с локальными платёжными шлюзами.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Payment Systems", color: "pink-text-gradient" },
+          { name: "RBAC", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "916TV",
+        description:
+          "OTT стриминговый сервис для фильмов, сериалов и коротких видео. Backend включает пайплайны HLS-транскодинга в нескольких качествах, студию автора для публикации фильмов и эпизодов, историю просмотров с личной библиотекой и CDN-доставку, оптимизированную под мобильные сети.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "HLS Streaming", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "CDN", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "Maqsad",
+        description:
+          "Социальная платформа для сообщества талантов Узбекистана, объединяющая вокалистов, танцоров, актёров и других креаторов. Реализованы поиск талантов по регионам и направлениям, лента фото, видео и коротких форматов с YouTube-встраиванием, прямые сообщения между креаторами, рейтинговая таблица на основе активности и push-уведомления на узбекском, русском и английском.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
         ],
       },
     ],

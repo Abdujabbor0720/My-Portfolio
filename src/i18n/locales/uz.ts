@@ -84,19 +84,6 @@ export const uz: Translations = {
         ],
       },
       {
-        name: "TDTU Help Bot",
-        description:
-          "Toshkent Davlat Tibbiyot Universitetida 5000+ faol foydalanuvchiga xizmat ko'rsatuvchi korporativ Telegram ekotizimi. Real vaqtli admin sinxronizatsiyasi, yangiliklar tarqatish va Next.js asosida qurilgan Telegram Web App frontendi mavjud.",
-        tags: [
-          { name: "TypeScript", color: "blue-text-gradient" },
-          { name: "NestJS", color: "green-text-gradient" },
-          { name: "TypeORM", color: "blue-text-gradient" },
-          { name: "PostgreSQL", color: "pink-text-gradient" },
-          { name: "Next.js", color: "green-text-gradient" },
-          { name: "TWA SDK", color: "blue-text-gradient" },
-        ],
-      },
-      {
         name: "Metalix",
         description:
           "Metall qurilish kompaniyasi uchun sanoat miqyosidagi platforma. Og'ir xizmat so'rovlarini qayta ishlash uchun asinxron vazifalar navbati (BullMQ), AWS S3 aktivlarini boshqarish va tuzilgan loyiha portfolio mexanizmi asosida ishlaydi.",
@@ -125,16 +112,17 @@ export const uz: Translations = {
         ],
       },
       {
-        name: "Airways System",
+        name: "Tarantool Games",
         description:
-          "Aviakompaniyalar faoliyatini boshqarish va parvoz jarayonlarini nazorat qilish uchun ishlab chiqilgan backend tizim. Loyihada 271 ta REST API endpoint ishlab chiqilgan bo'lib, ular orqali reyslar, yo'nalishlar, samolyotlar, yo'lovchilar, bron qilish jarayonlari va aviatsiya operatsiyalarini boshqarish imkoniyati yaratilgan.",
+          "Markaziy Osiyodagi birinchi AAA tarixiy action-RPG o'yinini yaratayotgan studiya — TaranTool Games uchun rasmiy veb-platforma. Steam wishlist oqimi, investor va hamkorlik so'rovlari, jamoa hamda roadmap kontentini boshqarish va treyler trafigiga moslangan media pipeline bilan ishlaydi.",
         tags: [
           { name: "TypeScript", color: "blue-text-gradient" },
           { name: "NestJS", color: "green-text-gradient" },
           { name: "PostgreSQL", color: "pink-text-gradient" },
           { name: "TypeORM", color: "blue-text-gradient" },
           { name: "Redis", color: "pink-text-gradient" },
-          { name: "Docker", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Next.js", color: "blue-text-gradient" },
         ],
       },
       {
@@ -151,6 +139,65 @@ export const uz: Translations = {
           { name: "Firebase FCM", color: "blue-text-gradient" },
           { name: "AI Chatbot", color: "green-text-gradient" },
           { name: "Payment Systems", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "UzChess",
+        description:
+          "WebSocket orqali real vaqtda ko'p o'yinchili shaxmat platformasi — Bullet, Blitz, Rapid va Chess960 formatlari. Arena turnirlari, reyting mexanizmi, boshqotirma tizimi, dvigatel asosidagi o'yin tahlili, mentorlar bilan video kurslar va push bildirishnomalar mavjud.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Docker", color: "green-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "CastingGo",
+        description:
+          "Brendlar va kasting agentliklarini aktyorlar, modellar, videograflar hamda kontent yaratuvchilar bilan bog'lovchi media-talent marketplace. Kasting e'lonlari oqimi, foto va video portfoliolarga ega tasdiqlangan talant profillari, kategoriya va kasb bo'yicha qidiruv hamda mahalliy to'lov tizimlari bilan PRO obuna qatlami ishlab chiqilgan.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Payment Systems", color: "pink-text-gradient" },
+          { name: "RBAC", color: "blue-text-gradient" },
+        ],
+      },
+      {
+        name: "916TV",
+        description:
+          "Filmlar, seriallar va qisqa videolar uchun OTT striming xizmati. Backend ko'p sifatli HLS transkodlash pipeline'lari, film va epizodlarni joylash uchun kreator studiyasi, ko'rish tarixi bilan shaxsiy kutubxona hamda mobil tarmoqlarga moslangan CDN yetkazib berishni qamrab oladi.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "HLS Streaming", color: "green-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "CDN", color: "pink-text-gradient" },
+        ],
+      },
+      {
+        name: "Maqsad",
+        description:
+          "O'zbekiston iste'dodlari jamiyati uchun ijtimoiy platforma — vokalchilar, raqqoslar, aktyorlar va boshqa ijodkorlarni birlashtiradi. Viloyat va yo'nalish bo'yicha iste'dod qidiruvi, YouTube havolalari bilan foto, video va qisqa kontent lentasi, ijodkorlar o'rtasida bevosita yozishmalar, faollikka asoslangan reyting jadvali hamda o'zbek, rus va ingliz tillarida push bildirishnomalar ishlab chiqilgan.",
+        tags: [
+          { name: "TypeScript", color: "blue-text-gradient" },
+          { name: "NestJS", color: "green-text-gradient" },
+          { name: "PostgreSQL", color: "pink-text-gradient" },
+          { name: "TypeORM", color: "blue-text-gradient" },
+          { name: "WebSocket", color: "pink-text-gradient" },
+          { name: "AWS S3", color: "green-text-gradient" },
+          { name: "Redis", color: "pink-text-gradient" },
+          { name: "Firebase FCM", color: "blue-text-gradient" },
         ],
       },
     ],

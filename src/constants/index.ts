@@ -6,6 +6,7 @@ import {
   mongodb,
   docker,
   yoshlarAgentligi,
+  mpmgLogo,
   eastway,
   uygunlik,
   metalix,
@@ -81,14 +82,17 @@ export const technologies: TTechnology[] = [
 // Experience visual data — text content comes from i18n translations.
 // Order must match the `jobs` array in every locale file.
 // `logo` is optional: when absent the card falls back to the monogram tile.
+// `logoBg` overrides the tile fill — dark marks need a light plate to read
+// against the card, colourful ones sit fine on the default translucent white.
 export const experienceVisuals: {
   monogram: string;
   accent: string;
   current: boolean;
   logo?: string;
+  logoBg?: string;
 }[] = [
   { monogram: "YA", accent: "#38bdf8", current: true, logo: yoshlarAgentligi }, // Youth Affairs Agency
-  { monogram: "MP", accent: "#a78bfa", current: true },  // MPMG
+  { monogram: "MP", accent: "#a78bfa", current: true, logo: mpmgLogo, logoBg: "#ffffff" }, // MPMG
   { monogram: "PG", accent: "#4ade80", current: false }, // Proger Group
   { monogram: "TH", accent: "#f472b6", current: false }, // TechHub
 ];

@@ -83,7 +83,9 @@ const JobCard: React.FC<JobCardProps> = ({
             className="flex h-[68px] w-[68px] flex-shrink-0 items-center justify-center rounded-2xl border text-[19px] font-black tracking-tight"
             style={{
               borderColor: `${accent}40`,
-              backgroundColor: visual?.logo ? "#ffffff0f" : `${accent}14`,
+              backgroundColor: visual?.logo
+                ? visual.logoBg ?? "#ffffff0f"
+                : `${accent}14`,
               color: accent,
             }}
           >

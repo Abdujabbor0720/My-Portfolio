@@ -37,6 +37,7 @@ import telegram from "./tech/telegram.svg";
 import telegrambot from "./tech/telegrambot.svg";
 
 import yoshlarAgentligi from "./company/yoshlar-agentligi.webp";
+import mpmgLogo from "./company/mpmg.webp";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -96,6 +97,7 @@ export {
   telegram,
   telegrambot,
   yoshlarAgentligi,
+  mpmgLogo,
   meta,
   shopify,
   starbucks,
